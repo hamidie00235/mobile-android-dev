@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">MyFirstApplication</string>
-    <string name="points_msg">Points:0</string>
-    <string name="wellcome_ap">Wellcome to my first application</string>
-    <string name="btnname">Button</string>
+    <string name="enter_second_number">Enter second number ...</string>
+
 </resources>

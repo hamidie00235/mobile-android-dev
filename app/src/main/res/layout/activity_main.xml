@@ -2,29 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_Result"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="DuplicateIds">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/wellcome_ap"
-
-        android:textColor="@color/blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/play"
-        android:layout_width="444dp"
-        android:layout_height="421dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/sotimex"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="109dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -45,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="-13dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -53,5 +36,97 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <EditText
+        android:id="@+id/et_FirstNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Enter first number ..."
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_SecondNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_second_number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_FirstNumber" />
+
+    <Button
+        android:id="@+id/btn_Subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ButtonClick"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Multiply"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_Add"
+        app:layout_constraintTop_toTopOf="@+id/btn_Add"
+        app:toggleCheckedStateOnClick="false" />
+
+    <Button
+        android:id="@+id/btn_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:onClick="ButtonClick"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Subtract"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_SecondNumber"
+        app:toggleCheckedStateOnClick="false" />
+
+    <Button
+        android:id="@+id/btn_Multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ButtonClick"
+        android:text="*"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Division"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_Subtract"
+        app:layout_constraintTop_toTopOf="@+id/btn_Subtract" />
+
+    <Button
+        android:id="@+id/btn_Division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ButtonClick"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_Multiply"
+        app:layout_constraintTop_toTopOf="@+id/btn_Multiply" />
+
+    <TextView
+        android:id="@+id/tv_Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:text="Soncuç:"
+        android:textColor="#E91E63"
+        android:textColorHighlight="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Subtract"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
