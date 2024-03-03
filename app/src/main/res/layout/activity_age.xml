@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".AgeActivity">
 
+    <EditText
+        android:id="@+id/et_birthYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Enter your birth year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_AgeCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Calculate Age"
+        app:layout_constraintEnd_toEndOf="@+id/et_birthYear"
+        app:layout_constraintTop_toBottomOf="@+id/et_birthYear" />
+
+    <TextView
+        android:id="@+id/tv_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="your age is:"
+        android:textColor="#C32D2D"
+        android:textColorHint="#801616"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_AgeCalculator" />
 </androidx.constraintlayout.widget.ConstraintLayout>
