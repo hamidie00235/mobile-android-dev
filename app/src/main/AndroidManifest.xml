@@ -14,30 +14,30 @@
         tools:targetApi="31">
         <activity
             android:name=".MassActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AgeActivity"
             android:exported="true" >
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity
-            android:name=".CalculatorActivity"
-            android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:name=".AgeActivity"
+            android:exported="true" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
+
+
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="true"/>
+
+
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
 
         </activity>
     </application>
