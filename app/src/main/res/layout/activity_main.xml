@@ -12,57 +12,57 @@
 
 
     <Button
-        android:id="@+id/btn_Liner"
+        android:id="@+id/btn_SMSService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Liner Layout"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Relative"
+        android:text="SMS Service"
+        app:layout_constraintBottom_toTopOf="@+id/btn_MailService"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_Relative"
+        android:id="@+id/btn_MailService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Relative Layout"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Frame"
+        android:text="Mail Service"
+        app:layout_constraintBottom_toTopOf="@+id/btn_LinkService"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Liner" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_SMSService" />
 
     <Button
-        android:id="@+id/btn_Frame"
+        android:id="@+id/btn_LinkService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Frame Layout"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Table"
+        android:text="Link Service"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ShareService"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Relative" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_MailService" />
 
     <Button
-        android:id="@+id/btn_Table"
+        android:id="@+id/btn_ShareService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Table Layout"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Grid"
+        android:text="Share Services"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ReturnActivity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Frame" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_LinkService" />
 
     <Button
-        android:id="@+id/btn_Grid"
+        android:id="@+id/btn_ReturnActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Grid Layout"
+        android:text="Return Activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Table" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ShareService" />
 </androidx.constraintlayout.widget.ConstraintLayout>

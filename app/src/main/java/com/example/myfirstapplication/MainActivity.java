@@ -14,22 +14,22 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-Button btnLiner,btnRelative,btnFrame,btnGrid,btnTable;
+Button btnSMSService,btnLinkService,btnMailService,btnShareServices,btnReturnActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView (R.layout.activity_main);
-      btnLiner=findViewById(R.id.btn_Liner);
-        btnFrame=findViewById(R.id.btn_Frame);
-        btnRelative=findViewById(R.id.btn_Relative);
-        btnGrid=findViewById(R.id.btn_Grid);
-        btnTable=findViewById(R.id.btn_Table);
+      btnSMSService=findViewById(R.id.btn_SMSService);
+        btnLinkService=findViewById(R.id.btn_LinkService);
+        btnMailService=findViewById(R.id.btn_MailService);
+        btnReturnActivity=findViewById(R.id.btn_ReturnActivity);
+        btnShareServices=findViewById(R.id.btn_ShareService);
 
-       btnFrame.setOnClickListener(this);
-        btnRelative.setOnClickListener(this);
-        btnGrid.setOnClickListener(this);
-        btnTable.setOnClickListener(this);
-        btnLiner.setOnClickListener(this);
+       btnSMSService.setOnClickListener(this);
+        btnLinkService.setOnClickListener(this);
+        btnMailService.setOnClickListener(this);
+        btnReturnActivity.setOnClickListener(this);
+        btnShareServices.setOnClickListener(this);
 
 
 
@@ -44,16 +44,16 @@ Button btnLiner,btnRelative,btnFrame,btnGrid,btnTable;
     @Override
     public void onClick(View view) {
         Intent i;
-        if (view.getId() == R.id.btn_Liner) {
-            i = new Intent(MainActivity.this, LinerActivity.class);
-        } else if (view.getId() == R.id.btn_Relative) {
-            i = new Intent(MainActivity.this, RelativeActivity.class);
-        } else if (view.getId() == R.id.btn_Frame) {
-            i = new Intent(MainActivity.this, FrameActivity.class);
-        } else if (view.getId() == R.id.btn_Table) {
-            i = new Intent(MainActivity.this, TableActivity.class);
-        } else if (view.getId() == R.id.btn_Grid) {
-            i = new Intent(MainActivity.this, GridActivity.class);
+        if (view.getId() == R.id.btn_SMSService) {
+            i = new Intent(MainActivity.this, SMSServiceActivity.class);
+        } else if (view.getId() == R.id.btn_MailService) {
+            i = new Intent(MainActivity.this, MailServiceActivity.class);
+        } else if (view.getId() == R.id.btn_LinkService) {
+            i = new Intent(MainActivity.this, LinkServiceActivity.class);
+        } else if (view.getId() == R.id.btn_ShareService) {
+            i = new Intent(MainActivity.this, ShareServicesActivity.class);
+        } else if (view.getId() == R.id.btn_ReturnActivity) {
+            i = new Intent(MainActivity.this, ReturnActivityActivity.class);
         } else {
             // Handle other cases or default behavior
             return;
