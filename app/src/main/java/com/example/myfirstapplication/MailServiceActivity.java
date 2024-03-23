@@ -27,6 +27,8 @@ Button btnSendMail;
                 String subject=etSubject.getText().toString();
                 String text=etMailText.getText().toString();
 
+
+
                 Intent mailIntent=new Intent(Intent. ACTION_SEND);
                 mailIntent. setType("message/rfc822");
                 mailIntent. putExtra(Intent. EXTRA_EMAIL,new String[]{email});
